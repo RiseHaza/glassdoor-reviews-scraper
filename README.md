@@ -1,229 +1,380 @@
-[Glassdoor Reviews Scraper](https://apify.com/scrapier/glassdoor-reviews-scraper?fpr=data)
+[Glassdoor Reviews Scraper](https://apify.com/fatihai-tools/glassdoor-reviews-scraper?fpr=data)
 
-The Glassdoor Reviews Scraper helps you collect real employee feedback, ratings, and workplace insights from Glassdoor company pages in a structured format 📊. It eliminates manual effort, making it easier to analyze trends, compare employers, and understand workplace sentiment using clean, reliable review data.
+$/$Skip to content[![Apify logo](/img/apify-logo/wordmark.svg)![Apify logo](/img/apify-logo/wordmark-white.svg)](https://apify.com/)
 
-## 🔍 What does Glassdoor Reviews Scraper do?
+- [![Promotion image background](https://cdn-cms.apify.com/Apify_Store_b55e0b3991.webp)
 
-A Glassdoor Reviews Scraper is a powerful data extraction tool designed to collect employee reviews, ratings, pros, cons, job titles, and company insights directly from Glassdoor company pages 📊. Instead of manually browsing hundreds of reviews, this tool automates the process and delivers structured data in minutes.
+Start here!
 
-Businesses, researchers, and analysts use a glassdoor reviews scraper to better understand workplace sentiment, employer branding, and market reputation. It’s especially useful when reviews are removed, hidden, or suspected to be fake, helping teams analyze trends objectively.
+Get data with ready-made web scrapers for popular websites
 
-Whether you want to scrape Glassdoor reviews for research, reputation monitoring, or competitive analysis, this scraper saves time ⏱️ and ensures consistent, reliable datasets for informed decision-making.
+Browse 27,897 Actors](https://apify.com/store)
 
----
+Apify platform
 
-## 📂 What Glassdoor Reviews Scraper can I extract?
+- [Apify Store
 
-The Glassdoor Reviews Scraper allows you to collect a wide range of structured review data for deeper insights 🧠. Below is a clear breakdown of extractable fields:
+Pre-built web scraping tools](https://apify.com/store)
+- [Actors
 
-| 📊 Data Type | 📝 Description |
-| --- | --- |
-| Company Name | Name of the employer listed on Glassdoor |
-| Review Title | Headline given by the reviewer |
-| Review Text | Full employee feedback content |
-| Overall Rating | Star rating (1–5 scale ⭐) |
-| Pros | Positive points mentioned |
-| Cons | Negative points mentioned |
-| Job Title | Role of the reviewer |
-| Employment Status | Current or former employee |
-| Review Date | When the review was posted |
-| Location | Reviewer’s work location |
-| CEO Approval | Approval or disapproval rating |
-| Recommendation | Whether the reviewer recommends the company |
+Build and run serverless programs](https://apify.com/actors)
+- [Integrations
 
-💡 This structured data is ideal for analyzing glassdoor reviews fake patterns, tracking sentiment over time, and understanding why Glassdoor removed my review scenarios occur.
+Connect with apps and services](https://apify.com/integrations)
+- [MCP
 
----
+Give your AI access to Actors](https://mcp.apify.com/)
 
-### 🚀 Key Features of Glassdoor Reviews Scraper
+Anti-blocking
 
-The glassdoor scraper is built for performance, accuracy, and scale. Here’s what makes it stand out 👇
+- [Anti-blocking
 
-- ✅ Bulk Review Extraction – Scrape thousands of reviews across multiple companies effortlessly
-- ⚡ Fast & Reliable – Optimized for high-speed data collection
-- 🔄 Pagination Support – Collect old and new reviews without limits
-- 🧹 Clean Structured Output – Ready-to-use JSON or CSV formats
-- 🧠 Sentiment-Friendly Fields – Pros, cons, ratings, and recommendations clearly separated
-- 🔐 No Login Required – Public data extraction only
-- 🛠️ Developer-Friendly – Works seamlessly with scrape glassdoor reviews python workflows
-- 📈 Scalable – From a single company to enterprise-level analysis
+Scrape without getting blocked](https://apify.com/anti-blocking)
+- [Proxy
 
-Many developers also explore glassdoor review scraper GitHub projects, but a ready-to-use scraper saves setup time and ongoing maintenance.
+Rotate scraper IP addresses](https://apify.com/proxy)
 
----
+Open source
 
-## 🛠️ How to use Glassdoor Reviews Scraper
+- [Crawlee
 
-Using the Glassdoor Reviews Scraper is simple and beginner-friendly 😊. Follow this step-by-step guide:
+Web scraping and crawling library](https://crawlee.dev/)
+- [![Promotion image background](https://cdn-cms.apify.com/mcp_server_configuration_manu_image_light_a56988095e.png)
 
-1️⃣ Log in to Apify
+MCP server configuration
 
-Create a free account or sign in to your existing one.
+Configure your Apify MCP server with Actors and tools for seamless integration with MCP clients.
 
-2️⃣ Select the Actor
+Start building](https://mcp.apify.com/)
 
-Search for “Glassdoor Reviews Scraper” in the Apify Store.
+Web data for
 
-3️⃣ Enter Input Data
+- [Enterprise](https://apify.com/enterprise)
+- [Startups](https://apify.com/resources/startups)
+- [Universities](https://apify.com/resources/universities)
+- [Nonprofits](https://apify.com/resources/nonprofits)
 
-Paste one or multiple Glassdoor company review URLs into the input field.
+Use cases
 
-4️⃣ Choose Options
+- [Data for generative AI](https://apify.com/use-cases/data-for-generative-ai)
+- [Data for AI agents](https://apify.com/use-cases/data-for-ai-agents)
+- [Lead generation](https://apify.com/use-cases/lead-generation)
+- [Market research](https://apify.com/use-cases/market-research)
+- [View more →](https://apify.com/use-cases)
 
-Set limits like number of reviews, language, or sorting preferences.
+Consulting
 
-5️⃣ Run the Actor
+- [Apify Professional Services](https://apify.com/professional-services)
+- [Apify Partners](https://apify.com/partners)
+- - [Documentation
 
-Click Start and let the scraper extract reviews automatically ⚙️.
+Full reference for the Apify platform](https://docs.apify.com/)
 
-6️⃣ Download Results
+Get started
 
-Export the data in JSON, CSV, or Excel format 📥.
+- [Code templates
 
-✨ No technical setup is required, even if you’ve never tried to scrape Glassdoor reviews before.
+Python, JavaScript, and TypeScript](https://apify.com/templates)
+- [Web scraping academy
 
----
+Courses for beginners and experts](https://docs.apify.com/academy)
+- [Monetize your code
 
-## 🎯 Use Cases
+Publish your scrapers and get paid](https://apify.com/partners/actor-developers)
 
-The Glassdoor Reviews Scraper supports a wide range of real-world applications 🌍:
+Learn
 
-- 🏢 Employer Branding Analysis – Understand employee sentiment at scale
-- 📣 Reputation Monitoring – Track sudden spikes in negative or positive reviews
-- 🔍 Fake Review Detection – Identify suspicious or repetitive review patterns
-- 📊 Market Research – Compare competitors using authentic employee feedback
-- 🤖 Data Science Projects – Feed structured review data into models
-- 🧑‍💼 HR & Talent Teams – Discover why employees stay or leave
-- 📝 Content & Reports – Support insights when Glassdoor reviews are removed or disputed
+- [API reference](https://docs.apify.com/api)
+- [CLI](https://docs.apify.com/cli/)
+- [SDK](https://docs.apify.com/sdk)
+- [MCP](https://docs.apify.com/platform/integrations/mcp)
+- [Crawlee](https://crawlee.dev/)
 
-Whether you’re investigating glassdoor reviews fake claims or analyzing workforce trends, this tool delivers actionable insights.
+[![Promotion image background](https://cdn-cms.apify.com/open_source_fair_share_light_resized_10_a382097735.png)
 
----
+Earn from your code
 
-## ⭐ Why choose us?
+$1M paid out last month. Many developers earn over $3k.
 
-We focus on accuracy, scalability, and simplicity 💎. Here’s why users trust our glassdoor reviews scraper:
+Start earning now](https://apify.com/partners/actor-developers)
+- - [Help and support
 
-- 🏆 Proven Reliability – Consistent results across thousands of runs
-- 🔍 Data Accuracy – Clean fields with minimal noise
-- 🚀 High Performance – Handles large volumes smoothly
-- 🤝 Trusted Platform – Built and hosted on Apify
-- 📞 Ongoing Support – Clear documentation and updates
-- 🧩 Flexible Integration – Works well with Python, dashboards, and analytics tools
+Advice and answers about Apify](https://help.apify.com/en/)
+- [Actor ideas
 
-Unlike many glassdoor review scraper GitHub scripts, our solution is production-ready and maintained.
+Get inspired to build Actors](https://apify.com/ideas)
+- [Changelog
 
----
+See what’s new on Apify](https://apify.com/change-log)
+- [Customer stories
 
-## 📈 How many results can you scrape with Glassdoor Reviews Scraper?
+Find out how others use Apify](https://apify.com/success-stories)
 
-The Glassdoor Reviews Scraper is designed for both small and large-scale data collection 🧮. You can scrape:
+Company
 
-- ✔️ Hundreds of reviews from a single company
-- ✔️ Thousands of reviews across multiple companies
-- ✔️ Historical reviews using pagination support
+- [About Apify](https://apify.com/about)
+- [Contact us](https://apify.com/contact)
+- [Blog](https://blog.apify.com/)
+- [Live events](https://lu.ma/apify)
+- [Partners](https://apify.com/partners)
+- [Jobs
 
-There’s no hard cap on results—your limits depend on:
+We're hiring!](https://apify.com/jobs)
 
-- Number of company URLs
-- Review availability per company
-- Selected run configuration
+[![Promotion image background](https://cdn-cms.apify.com/Join_our_Discord_b7eb9d974a.webp)
 
-This scalability makes it perfect for enterprises, researchers, and analysts who need to scrape Glassdoor reviews continuously or in bulk.
+Join our Discord
 
-Whether you’re monitoring one employer or tracking an entire industry, the scraper adapts to your workload without sacrificing speed or data quality ⚡.
+Talk to scraping experts](https://discord.com/invite/jyEM2PRvMU)
+- [Pricing](https://apify.com/pricing)
+- [Contact sales](https://apify.com/contact-sales)
 
----
+![Glassdoor Reviews Scraper - Indeed Reviews Alternative avatar](https://apify.com/img/store/actor_picture.svg)
 
-## ⚖️ Is it legal to scrape Glassdoor reviews?
+Glassdoor Reviews Scraper - Indeed Reviews Alternative
 
-Scraping Glassdoor reviews requires responsible and ethical use ⚠️. Here’s what to keep in mind:
+Pricing
 
-- 📜 Only publicly available data should be collected
-- 🔐 Avoid private or restricted content
-- 🧑‍⚖️ Follow local data usage and compliance rules
-- 🤝 Respect platform terms and fair-use principles
+$5.00/month + usage
 
-Many users scrape data for research, analysis, or internal insights, not redistribution. If you’re unsure, always consult legal guidance. Ethical scraping protects both your project and data integrity.
+[Try for free](https://console.apify.com/actors/M7z7pmtakV0E7uq71?addFromActorId=M7z7pmtakV0E7uq71)[Go to Apify Store](https://apify.com/store)![Glassdoor Reviews Scraper - Indeed Reviews Alternative](https://apify.com/img/store/actor_picture.svg)
 
----
+# Glassdoor Reviews Scraper - Indeed Reviews Alternative
 
-## 🔧 Input Parameters
+[Try for free](https://console.apify.com/actors/M7z7pmtakV0E7uq71?addFromActorId=M7z7pmtakV0E7uq71)
 
-### 📥 Example Input JSON
+Scrape reviews from Glassdoor fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed Reviews. Use for lead generation, market research, competitive analysis.
 
-```
-{
-  "startItems": [
-    "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
-    "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm"
-  ],
-  "proxyConfiguration": {
-    "useApifyProxy": false
-  },
-  "maxResults": 50
-}
-```
+Pricing
 
-## 📤 Output Format
+$5.00/month + usage
 
-### 📦 Example Output JSON
+Rating
 
-```
-{
-  "company_id": 354,
-  "company_url": "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
-  "reviews_count": 120,
-  "review_id": 4852131,
-  "summary": "Advisory Engineer in STG, IBM",
-  "pros": "Great colleagues, flexible policies...",
-  "cons": "Rating system issues...",
-  "advice": "Management must keep in mind...",
-  "rating_overall": 4,
-  "rating_career_opportunities": 5.0,
-  "rating_compensation_and_benefits": 3.0,
-  "job_title": "Advisory Engineer",
-  "location": "Hopewell Junction, NY",
-  "review_date_time": "2014-08-26T09:02:30.030",
-  "is_current_job": true,
-  "length_of_employment": 9
-}
-```
+0.0
 
-## ❓ FAQ – Glassdoor Reviews Scraper
+( 0 )
 
-### 1️⃣ Can I scrape Glassdoor reviews in bulk?
+Developer
 
-Yes, the scraper supports bulk extraction across multiple companies.
+[![fatih dağüstü](/_next/image?url=https%3A%2F%2Fimages.apifyusercontent.com%2FgIyeDxlfCFcoJEXatFV1exqe2mauCJ6umO7ppMnJ-E0%2Frs%3Afill%3A224%3A224%2Fcb%3A1%2FaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVNULVgwbWtnVm5fYV9UaS1RMGZsMGNKZ2ItUEVscThudGtnMDFzZ1dnWkhEbDlBPXM5Ni1j.webp&w=3840&q=75)
 
-### 2️⃣ Does this help analyze fake reviews?
+fatih dağüstü](https://apify.com/fatihai-tools)Maintained by  Community
 
-Absolutely. Structured data makes it easier to spot unusual patterns.
+Actor stats
 
-### 3️⃣ Can I use this with Python?
+0
 
-Yes, it integrates smoothly with scrape glassdoor reviews python workflows.
+Bookmarked
 
-### 4️⃣ Why was my Glassdoor review removed?
+1
 
-Reviews may be removed due to policy violations or moderation rules.
+Total users
 
-### 5️⃣ Is this better than GitHub scrapers?
+0
 
-Yes, it’s maintained, scalable, and requires no manual setup.
+Monthly active users
 
-### 6️⃣ What formats can I download?
+3 days ago
 
-JSON, CSV, and Excel formats are supported.
+Last modified
 
-### 7️⃣ Do I need a Glassdoor account?
+Categories
 
-No account or login is required for public review pages.
+[Jobs](https://apify.com/store/categories/jobs)[Business](https://apify.com/store/categories/business)
 
----
+Share
 
-## ✅ Conclusion
+[README](https://apify.com/fatihai-tools/glassdoor-reviews-scraper)[Input](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/input-schema)[Pricing](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/pricing)[API](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/api/python)[Issues](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/issues/open)
 
-The Glassdoor Reviews Scraper is a reliable solution for gathering large volumes of employee reviews quickly and efficiently 🚀. Whether you’re analyzing company reputation, tracking review patterns, or conducting research, this tool delivers structured data that supports smarter decisions and deeper workplace insights.
+The Actor has no **README.md** file. Sad!
 
-✨ Glassdoor Reviews Scraper gives you clarity, scale, and confidence when working with employee reviews. Ready to turn reviews into insights?
+## You might also like
+
+[### Glassdoor Job Listings Scraper - Indeed Reviews Alternative
+
+fatihai-tools / glassdoor-jobs-scraper
+
+Scrape job listings from Glassdoor fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed Reviews. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+2](https://apify.com/fatihai-tools/glassdoor-jobs-scraper)[### Glassdoor Job Listings Scraper - Indeed Reviews Alternative
+
+fatihai-tools / glassdoor-jobs
+
+Scrape job listings from Glassdoor fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed Reviews. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+2](https://apify.com/fatihai-tools/glassdoor-jobs)[### Indeed Job Listings Scraper - ZipRecruiter Alternative
+
+fatihai-tools / indeed-jobs-scraper
+
+Scrape job listings from Indeed fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to ZipRecruiter, Glassdoor. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+3](https://apify.com/fatihai-tools/indeed-jobs-scraper)[### Google Jobs Job Listings Scraper - Indeed Alternative
+
+fatihai-tools / google-jobs-scraper
+
+Scrape job listings from Google Jobs fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed, ZipRecruiter. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+5](https://apify.com/fatihai-tools/google-jobs-scraper)[### Google Reviews Data Scraper - Trustpilot scraper Alternative
+
+fatihai-tools / google-reviews-scraper
+
+Scrape data from Google Reviews fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Trustpilot scraper. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+6](https://apify.com/fatihai-tools/google-reviews-scraper)[### Trustpilot Reviews Scraper - Sitejabber Alternative
+
+fatihai-tools / trustpilot-reviews-scraper
+
+Scrape reviews from Trustpilot fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Sitejabber, BBB. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+2](https://apify.com/fatihai-tools/trustpilot-reviews-scraper)[### G2 Reviews Data Scraper - Capterra Alternative
+
+fatihai-tools / g2-reviews-scraper
+
+Scrape data from G2 Reviews fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Capterra, TrustRadius. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+23](https://apify.com/fatihai-tools/g2-reviews-scraper)[### Ip Data Scraper - competitors Alternative
+
+fatihai-tools / ip-geolocation
+
+Scrape data from Ip fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to competitors. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+2](https://apify.com/fatihai-tools/ip-geolocation)[### Salary Data Data Scraper - Levels.fyi Alternative
+
+fatihai-tools / job-salary-scraper
+
+Scrape data from Salary Data fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Levels.fyi, Glassdoor. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+2](https://apify.com/fatihai-tools/job-salary-scraper)[### Company Data Data Scraper - Crunchbase Alternative
+
+fatihai-tools / company-info-scraper
+
+Scrape data from Company Data fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Crunchbase, ZoomInfo. Use for lead generation, market research, competitive analysis.
+
+![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
+
+fatih dağüstü
+
+7](https://apify.com/fatihai-tools/company-info-scraper)
+
+### Related articles
+
+[![Blog article image](https://images.apifyusercontent.com/5uPzGjBFvrfxDnntxsnm3e86BUk1RhJz5xVad_qYukg/rs:fill:630:354/cb:1/aHR0cHM6Ly9ibG9nLmFwaWZ5LmNvbS9jb250ZW50L2ltYWdlcy8yMDI1LzAzL0dsYXNzZG9vci1SZXZpZXdzLS1JbnRlcnZpZXdzLS1Mb2NhdGlvbnMtLVNhbGFyeS0tSm9iLS1PdmVydmlldy5wbmc.webp)Glassdoor scraping 101: how to scrape Glassdoor reviews, jobs and company detailsRead more](https://blog.apify.com/how-to-scrape-glassdoor/)$/$
+
+Product
+
+- [Apify Store](https://apify.com/store)
+- [Integrations](https://apify.com/integrations)
+- [Proxy](https://apify.com/proxy)
+- [MCP](https://mcp.apify.com/)
+- [Crawlee](https://crawlee.dev/)
+
+Developers
+
+- [Documentation](https://docs.apify.com/)
+- [Code templates](https://apify.com/templates)
+- [API reference](https://docs.apify.com/api)
+- [Get paid on Apify](https://apify.com/partners/actor-developers)
+
+Consulting
+
+- [Professional Services](https://apify.com/professional-services)
+- [Apify Partners](https://apify.com/partners)
+
+Support
+
+- [Help & Support](https://help.apify.com/en/)
+- [Submit your ideas](https://apify.com/ideas)
+- [Forum](https://discord.apify.com/)
+
+Spotlight
+
+- [APIs](https://apify.com/api)
+- [What is web scraping?](https://blog.apify.com/what-is-web-scraping/)
+- [Best web scraping tools](https://blog.apify.com/best-web-scraping-tools/)
+- [Python web scraping libraries](https://blog.apify.com/what-are-the-best-python-web-scraping-libraries/)
+- [Scrapers](https://apify.com/scrapers)
+
+Company
+
+- [About Apify](https://apify.com/about)
+- [Contact us](https://apify.com/contact)
+- [Events](https://lu.ma/apify)
+- [Blog](https://blog.apify.com/)
+- [Become an affiliate](https://apify.com/partners/affiliate)
+- [Customer stories](https://apify.com/success-stories)
+- [Changelog](https://apify.com/change-log)
+- [JobsWe're hiring!](https://apify.com/jobs)
+- [Brand](https://apify.com/resources/brand)
+- [Impressum](https://docs.apify.com/legal)
+
+[![Apify logo](/img/apify-logo/logomark-32x32.svg)](https://apify.com/)
+
+Socials
+
+- 
+- 
+- 
+- 
+- 
+- 
+
+Security
+
+- [![GDPR image](https://cdn-cms.apify.com/GDPR_a807ac9a_ba0683f740.svg)](https://docs.apify.com/legal/gdpr-information)
+- [![SOC2 image](https://cdn-cms.apify.com/SOC_dc6cf5ae_f7999d700f.svg)](https://trust.apify.com/)
+
+Reviews
+
+- [![GetApp Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FGet_App_1f4079a540.png&w=3840&q=75)](https://www.getapp.com/business-intelligence-analytics-software/a/apify/)
+- [![Software Advice Apify reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FSoftwareadvice_88026ee6c2.png&w=3840&q=75)](https://www.softwareadvice.com/data-extraction/apify-profile/)
+- [![Capterra Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FCapterra_ce83db3070.png&w=3840&q=75)](https://www.capterra.com/p/150854/Apify/)
+- [![G2 Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FG2_d80d60f2f8.png&w=3840&q=75)](https://www.g2.com/products/apify/reviews)
+- [![TrustRadius Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FTrust_Radius_7ca0e0bdad.png&w=3840&q=75)](https://www.trustradius.com/products/apify/reviews)
+- [![Crozdesk Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FCrozdesk_1d12ceb040.png&w=3840&q=75)](https://crozdesk.com/software/apify)
+
+[Loading status...](https://status.apify.com/)
+
+[Terms of Use](https://docs.apify.com/legal/general-terms-and-conditions)
+
+[Privacy Policy](https://docs.apify.com/legal/privacy-policy)
+
+[Cookie Policy](https://docs.apify.com/legal/cookie-policy)
+
+[©  2026  Apify](https://docs.apify.com/legal)
