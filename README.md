@@ -1,380 +1,260 @@
-[Glassdoor Reviews Scraper](https://apify.com/fatihai-tools/glassdoor-reviews-scraper?fpr=data)
+[Glassdoor Reviews Scraper](https://apify.com/kaix/glassdoor-reviews-scraper?fpr=data)
 
-$/$Skip to content[![Apify logo](/img/apify-logo/wordmark.svg)![Apify logo](/img/apify-logo/wordmark-white.svg)](https://apify.com/)
+# Glassdoor Reviews Scraper
 
-- [![Promotion image background](https://cdn-cms.apify.com/Apify_Store_b55e0b3991.webp)
+Scrape every review from any Glassdoor company page. ~10,000 reviews per minute. Structured JSON output with 10 rating categories, employment details, translations, and employer responses. Collects reviews in all languages.
 
-Start here!
+Optionally fetches comprehensive company data: profile, aggregate ratings, demographic breakdowns, office locations, benefits, photos, and more.
 
-Get data with ready-made web scrapers for popular websites
+Just paste a Glassdoor company reviews URL and hit Run.
 
-Browse 27,897 Actors](https://apify.com/store)
+## What you get
 
-Apify platform
-
-- [Apify Store
-
-Pre-built web scraping tools](https://apify.com/store)
-- [Actors
-
-Build and run serverless programs](https://apify.com/actors)
-- [Integrations
-
-Connect with apps and services](https://apify.com/integrations)
-- [MCP
-
-Give your AI access to Actors](https://mcp.apify.com/)
-
-Anti-blocking
-
-- [Anti-blocking
-
-Scrape without getting blocked](https://apify.com/anti-blocking)
-- [Proxy
-
-Rotate scraper IP addresses](https://apify.com/proxy)
-
-Open source
-
-- [Crawlee
-
-Web scraping and crawling library](https://crawlee.dev/)
-- [![Promotion image background](https://cdn-cms.apify.com/mcp_server_configuration_manu_image_light_a56988095e.png)
-
-MCP server configuration
-
-Configure your Apify MCP server with Actors and tools for seamless integration with MCP clients.
-
-Start building](https://mcp.apify.com/)
-
-Web data for
-
-- [Enterprise](https://apify.com/enterprise)
-- [Startups](https://apify.com/resources/startups)
-- [Universities](https://apify.com/resources/universities)
-- [Nonprofits](https://apify.com/resources/nonprofits)
-
-Use cases
-
-- [Data for generative AI](https://apify.com/use-cases/data-for-generative-ai)
-- [Data for AI agents](https://apify.com/use-cases/data-for-ai-agents)
-- [Lead generation](https://apify.com/use-cases/lead-generation)
-- [Market research](https://apify.com/use-cases/market-research)
-- [View more →](https://apify.com/use-cases)
-
-Consulting
-
-- [Apify Professional Services](https://apify.com/professional-services)
-- [Apify Partners](https://apify.com/partners)
-- - [Documentation
-
-Full reference for the Apify platform](https://docs.apify.com/)
-
-Get started
-
-- [Code templates
-
-Python, JavaScript, and TypeScript](https://apify.com/templates)
-- [Web scraping academy
-
-Courses for beginners and experts](https://docs.apify.com/academy)
-- [Monetize your code
-
-Publish your scrapers and get paid](https://apify.com/partners/actor-developers)
-
-Learn
-
-- [API reference](https://docs.apify.com/api)
-- [CLI](https://docs.apify.com/cli/)
-- [SDK](https://docs.apify.com/sdk)
-- [MCP](https://docs.apify.com/platform/integrations/mcp)
-- [Crawlee](https://crawlee.dev/)
-
-[![Promotion image background](https://cdn-cms.apify.com/open_source_fair_share_light_resized_10_a382097735.png)
-
-Earn from your code
-
-$1M paid out last month. Many developers earn over $3k.
-
-Start earning now](https://apify.com/partners/actor-developers)
-- - [Help and support
-
-Advice and answers about Apify](https://help.apify.com/en/)
-- [Actor ideas
-
-Get inspired to build Actors](https://apify.com/ideas)
-- [Changelog
-
-See what’s new on Apify](https://apify.com/change-log)
-- [Customer stories
-
-Find out how others use Apify](https://apify.com/success-stories)
-
-Company
-
-- [About Apify](https://apify.com/about)
-- [Contact us](https://apify.com/contact)
-- [Blog](https://blog.apify.com/)
-- [Live events](https://lu.ma/apify)
-- [Partners](https://apify.com/partners)
-- [Jobs
-
-We're hiring!](https://apify.com/jobs)
-
-[![Promotion image background](https://cdn-cms.apify.com/Join_our_Discord_b7eb9d974a.webp)
-
-Join our Discord
-
-Talk to scraping experts](https://discord.com/invite/jyEM2PRvMU)
-- [Pricing](https://apify.com/pricing)
-- [Contact sales](https://apify.com/contact-sales)
-
-![Glassdoor Reviews Scraper - Indeed Reviews Alternative avatar](https://apify.com/img/store/actor_picture.svg)
-
-Glassdoor Reviews Scraper - Indeed Reviews Alternative
-
-Pricing
-
-$5.00/month + usage
-
-[Try for free](https://console.apify.com/actors/M7z7pmtakV0E7uq71?addFromActorId=M7z7pmtakV0E7uq71)[Go to Apify Store](https://apify.com/store)![Glassdoor Reviews Scraper - Indeed Reviews Alternative](https://apify.com/img/store/actor_picture.svg)
-
-# Glassdoor Reviews Scraper - Indeed Reviews Alternative
-
-[Try for free](https://console.apify.com/actors/M7z7pmtakV0E7uq71?addFromActorId=M7z7pmtakV0E7uq71)
-
-Scrape reviews from Glassdoor fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed Reviews. Use for lead generation, market research, competitive analysis.
-
-Pricing
-
-$5.00/month + usage
-
-Rating
-
-0.0
-
-( 0 )
-
-Developer
-
-[![fatih dağüstü](/_next/image?url=https%3A%2F%2Fimages.apifyusercontent.com%2FgIyeDxlfCFcoJEXatFV1exqe2mauCJ6umO7ppMnJ-E0%2Frs%3Afill%3A224%3A224%2Fcb%3A1%2FaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSVNULVgwbWtnVm5fYV9UaS1RMGZsMGNKZ2ItUEVscThudGtnMDFzZ1dnWkhEbDlBPXM5Ni1j.webp&w=3840&q=75)
-
-fatih dağüstü](https://apify.com/fatihai-tools)Maintained by  Community
-
-Actor stats
-
-0
-
-Bookmarked
-
-1
-
-Total users
-
-0
-
-Monthly active users
-
-3 days ago
-
-Last modified
-
-Categories
-
-[Jobs](https://apify.com/store/categories/jobs)[Business](https://apify.com/store/categories/business)
-
-Share
-
-[README](https://apify.com/fatihai-tools/glassdoor-reviews-scraper)[Input](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/input-schema)[Pricing](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/pricing)[API](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/api/python)[Issues](https://apify.com/fatihai-tools/glassdoor-reviews-scraper/issues/open)
-
-The Actor has no **README.md** file. Sad!
-
-## You might also like
-
-[### Glassdoor Job Listings Scraper - Indeed Reviews Alternative
-
-fatihai-tools / glassdoor-jobs-scraper
-
-Scrape job listings from Glassdoor fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed Reviews. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-2](https://apify.com/fatihai-tools/glassdoor-jobs-scraper)[### Glassdoor Job Listings Scraper - Indeed Reviews Alternative
-
-fatihai-tools / glassdoor-jobs
-
-Scrape job listings from Glassdoor fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed Reviews. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-2](https://apify.com/fatihai-tools/glassdoor-jobs)[### Indeed Job Listings Scraper - ZipRecruiter Alternative
-
-fatihai-tools / indeed-jobs-scraper
-
-Scrape job listings from Indeed fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to ZipRecruiter, Glassdoor. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-3](https://apify.com/fatihai-tools/indeed-jobs-scraper)[### Google Jobs Job Listings Scraper - Indeed Alternative
-
-fatihai-tools / google-jobs-scraper
-
-Scrape job listings from Google Jobs fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Indeed, ZipRecruiter. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-5](https://apify.com/fatihai-tools/google-jobs-scraper)[### Google Reviews Data Scraper - Trustpilot scraper Alternative
-
-fatihai-tools / google-reviews-scraper
-
-Scrape data from Google Reviews fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Trustpilot scraper. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-6](https://apify.com/fatihai-tools/google-reviews-scraper)[### Trustpilot Reviews Scraper - Sitejabber Alternative
-
-fatihai-tools / trustpilot-reviews-scraper
-
-Scrape reviews from Trustpilot fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Sitejabber, BBB. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-2](https://apify.com/fatihai-tools/trustpilot-reviews-scraper)[### G2 Reviews Data Scraper - Capterra Alternative
-
-fatihai-tools / g2-reviews-scraper
-
-Scrape data from G2 Reviews fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Capterra, TrustRadius. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-23](https://apify.com/fatihai-tools/g2-reviews-scraper)[### Ip Data Scraper - competitors Alternative
-
-fatihai-tools / ip-geolocation
-
-Scrape data from Ip fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to competitors. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-2](https://apify.com/fatihai-tools/ip-geolocation)[### Salary Data Data Scraper - Levels.fyi Alternative
-
-fatihai-tools / job-salary-scraper
-
-Scrape data from Salary Data fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Levels.fyi, Glassdoor. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-2](https://apify.com/fatihai-tools/job-salary-scraper)[### Company Data Data Scraper - Crunchbase Alternative
-
-fatihai-tools / company-info-scraper
-
-Scrape data from Company Data fast. Bulk URL or query input, structured JSON/CSV output, no login required. Free trial — perfect alternative to Crunchbase, ZoomInfo. Use for lead generation, market research, competitive analysis.
-
-![User avatar](https://images.apifyusercontent.com/3hqpkgYhriHguznw66rIW11nfPTLFOJ1VQLgxuDwM-M/rs:fill:32:32/cb:1/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20vcFIxNmd0MWYwNERSLWpOTVFJWU9rUGFVNmpNT1NYZFRPUmFUenZicmtDQS9yczpmaWxsOjMyOjMyL2NiOjEvYUhSMGNITTZMeTlzYURNdVoyOXZaMnhsZFhObGNtTnZiblJsYm5RdVkyOXRMMkV2UVVObk9HOWpTVk5VTFZnd2JXdG5WbTVmWVY5VWFTMVJNR1pzTUdOS1oySXRVRVZzY1RodWRHdG5NREZ6WjFkbldraEViRGxCUFhNNU5pMWo.webp)
-
-fatih dağüstü
-
-7](https://apify.com/fatihai-tools/company-info-scraper)
-
-### Related articles
-
-[![Blog article image](https://images.apifyusercontent.com/5uPzGjBFvrfxDnntxsnm3e86BUk1RhJz5xVad_qYukg/rs:fill:630:354/cb:1/aHR0cHM6Ly9ibG9nLmFwaWZ5LmNvbS9jb250ZW50L2ltYWdlcy8yMDI1LzAzL0dsYXNzZG9vci1SZXZpZXdzLS1JbnRlcnZpZXdzLS1Mb2NhdGlvbnMtLVNhbGFyeS0tSm9iLS1PdmVydmlldy5wbmc.webp)Glassdoor scraping 101: how to scrape Glassdoor reviews, jobs and company detailsRead more](https://blog.apify.com/how-to-scrape-glassdoor/)$/$
-
-Product
-
-- [Apify Store](https://apify.com/store)
-- [Integrations](https://apify.com/integrations)
-- [Proxy](https://apify.com/proxy)
-- [MCP](https://mcp.apify.com/)
-- [Crawlee](https://crawlee.dev/)
-
-Developers
-
-- [Documentation](https://docs.apify.com/)
-- [Code templates](https://apify.com/templates)
-- [API reference](https://docs.apify.com/api)
-- [Get paid on Apify](https://apify.com/partners/actor-developers)
-
-Consulting
-
-- [Professional Services](https://apify.com/professional-services)
-- [Apify Partners](https://apify.com/partners)
-
-Support
-
-- [Help & Support](https://help.apify.com/en/)
-- [Submit your ideas](https://apify.com/ideas)
-- [Forum](https://discord.apify.com/)
-
-Spotlight
-
-- [APIs](https://apify.com/api)
-- [What is web scraping?](https://blog.apify.com/what-is-web-scraping/)
-- [Best web scraping tools](https://blog.apify.com/best-web-scraping-tools/)
-- [Python web scraping libraries](https://blog.apify.com/what-are-the-best-python-web-scraping-libraries/)
-- [Scrapers](https://apify.com/scrapers)
-
-Company
-
-- [About Apify](https://apify.com/about)
-- [Contact us](https://apify.com/contact)
-- [Events](https://lu.ma/apify)
-- [Blog](https://blog.apify.com/)
-- [Become an affiliate](https://apify.com/partners/affiliate)
-- [Customer stories](https://apify.com/success-stories)
-- [Changelog](https://apify.com/change-log)
-- [JobsWe're hiring!](https://apify.com/jobs)
-- [Brand](https://apify.com/resources/brand)
-- [Impressum](https://docs.apify.com/legal)
-
-[![Apify logo](/img/apify-logo/logomark-32x32.svg)](https://apify.com/)
-
-Socials
-
-- 
-- 
-- 
-- 
-- 
-- 
-
-Security
-
-- [![GDPR image](https://cdn-cms.apify.com/GDPR_a807ac9a_ba0683f740.svg)](https://docs.apify.com/legal/gdpr-information)
-- [![SOC2 image](https://cdn-cms.apify.com/SOC_dc6cf5ae_f7999d700f.svg)](https://trust.apify.com/)
-
-Reviews
-
-- [![GetApp Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FGet_App_1f4079a540.png&w=3840&q=75)](https://www.getapp.com/business-intelligence-analytics-software/a/apify/)
-- [![Software Advice Apify reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FSoftwareadvice_88026ee6c2.png&w=3840&q=75)](https://www.softwareadvice.com/data-extraction/apify-profile/)
-- [![Capterra Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FCapterra_ce83db3070.png&w=3840&q=75)](https://www.capterra.com/p/150854/Apify/)
-- [![G2 Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FG2_d80d60f2f8.png&w=3840&q=75)](https://www.g2.com/products/apify/reviews)
-- [![TrustRadius Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FTrust_Radius_7ca0e0bdad.png&w=3840&q=75)](https://www.trustradius.com/products/apify/reviews)
-- [![Crozdesk Apify user reviews image](/_next/image?url=https%3A%2F%2Fcdn-cms.apify.com%2FCrozdesk_1d12ceb040.png&w=3840&q=75)](https://crozdesk.com/software/apify)
-
-[Loading status...](https://status.apify.com/)
-
-[Terms of Use](https://docs.apify.com/legal/general-terms-and-conditions)
-
-[Privacy Policy](https://docs.apify.com/legal/privacy-policy)
-
-[Cookie Policy](https://docs.apify.com/legal/cookie-policy)
-
-[©  2026  Apify](https://docs.apify.com/legal)
+### Reviews
+
+Every review includes:
+
+- **Review text**: summary, pros, cons, advice to management
+- **10 ratings**: overall, work-life balance, culture, leadership, compensation, career opportunities, diversity, CEO approval, business outlook, recommend to friend
+- **Employment**: current/former, job title, tenure, employment status
+- **Location**: city and region
+- **Engagement**: helpful votes, featured status
+- **Translations**: original text for non-English reviews
+- **Employer responses**: company replies with job title and timestamps
+- **Meta**: review detail URL, division info, language mismatch flag
+
+### Company data
+
+One consolidated object per employer with:
+
+- **Profile**: name, headquarters, revenue, size, website, type, year founded, industry/sector, logos, CEO
+- **Aggregate ratings**: overall + 11 sub-ratings with CEO approval and recommend-to-friend ratios
+- **Rating distributions**: star breakdown (1-5) for 7 categories + recommend distribution
+- **Demographic ratings**: ratings broken down by gender, race/ethnicity, sexual orientation, disability, parent/caregiver, veteran status
+- **Review locations**: flat list of all cities/metros where reviews were submitted, with state and country
+- **Office locations**: full addresses with postal codes, country/continent, and per-office overall rating
+- **Benefits**: 50+ individual benefits with category, rating, review count, and verified status
+- **Photos**: company photos with captions
+- **Related companies**: parent, subsidiaries, siblings with ratings and counts
+- **Awards**: best places to work, best-led companies
+
+## Quick start
+
+Paste a Glassdoor company reviews URL:
+
+```
+{
+  "urls": ["https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm"]
+}
+```
+
+That's it. Default: 20 most recent reviews + full company data.
+
+### More examples
+
+**Multiple companies (200 reviews each):**
+
+```
+{
+  "urls": [
+    "https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm",
+    "https://www.glassdoor.com/Reviews/Meta-Reviews-E40772.htm"
+  ],
+  "maxReviews": 200
+}
+```
+
+**Reviews only (skip company data):**
+
+```
+{
+  "urls": ["https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm"],
+  "includeCompanyData": false
+}
+```
+
+**All reviews for a company:**
+
+```
+{
+  "urls": ["https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm"],
+  "maxReviews": 0
+}
+```
+
+## Input
+
+| Parameter | Type | Default | Description |
+| --- | --- | --- | --- |
+| **urls** | string[] | required | Glassdoor company reviews URLs (e.g. `glassdoor.com/Reviews/Google-Reviews-E9079.htm`) |
+| **maxReviews** | number | 20 | Max reviews per company. Set to 0 for no limit (all reviews). |
+| **sort** | select | DATE | `DATE` (newest first) or `RATING` (highest rated first) |
+| **includeCompanyData** | boolean | true | Fetch company profile, ratings, demographics, locations, benefits, photos |
+
+## Output
+
+### Reviews dataset (default)
+
+Each review is a single JSON object:
+
+```
+{
+  "reviewId": 103260164,
+  "url": "https://www.glassdoor.com/Reviews/Employee-Review-Nucor-RVW103260164.htm",
+  "reviewDateTime": "2026-03-21T23:47:58.430",
+  "summary": "Not a good company",
+  "pros": "Good benefits and pay",
+  "cons": "Long hours, limited growth",
+  "advice": "Improve work-life balance",
+  "ratings": {
+    "overall": 4,
+    "workLifeBalance": 3,
+    "cultureAndValues": 4,
+    "seniorLeadership": 3,
+    "compensationAndBenefits": 5,
+    "careerOpportunities": 4,
+    "diversityAndInclusion": 4,
+    "ceo": "APPROVE",
+    "businessOutlook": "POSITIVE",
+    "recommendToFriend": "POSITIVE"
+  },
+  "employment": {
+    "isCurrentJob": true,
+    "status": "REGULAR",
+    "lengthOfEmployment": 36,
+    "jobEndingYear": null,
+    "jobTitle": { "id": 61331, "text": "Software Engineer" }
+  },
+  "location": { "id": 1127429, "name": "Birmingham, AL", "type": "CITY" },
+  "engagement": { "countHelpful": 10, "countNotHelpful": 2, "featured": false },
+  "translation": {
+    "languageId": "eng",
+    "originalLanguageId": null,
+    "summaryOriginal": null,
+    "prosOriginal": null,
+    "consOriginal": null,
+    "adviceOriginal": null
+  },
+  "hasEmployerResponse": false,
+  "employer": { "id": 489, "shortName": "Nucor", "name": "Nucor Corporation" },
+  "employerResponses": [],
+  "meta": {
+    "isLegal": true,
+    "isCovid19": false,
+    "translationMethod": null,
+    "flaggingDisabled": null,
+    "relatedStructures": [],
+    "isLanguageMismatch": false,
+    "reviewDetailUrl": "/Reviews/Employee-Review--RVW103260164.htm",
+    "divisionName": null,
+    "divisionLink": null,
+    "topLevelDomainId": 1,
+    "scrapedAt": "2026-03-30T10:00:00.000Z"
+  }
+}
+```
+
+### Company dataset (COMPANY)
+
+One object per employer. Available via the named dataset `COMPANY` in Apify console or API.
+
+```
+{
+  "id": 489,
+  "name": "Nucor Corporation",
+  "shortName": "Nucor",
+  "headquarters": "Charlotte, NC",
+  "revenue": "$10+ billion (USD)",
+  "size": "10000+ Employees",
+  "sizeCategory": "GIANT",
+  "website": "www.nucor.com",
+  "type": "Company - Public",
+  "yearFounded": 1971,
+  "primaryIndustry": {
+    "industryId": 200074,
+    "industryName": "Metal & Mineral Manufacturing",
+    "sectorId": 10015,
+    "sectorName": "Manufacturing"
+  },
+  "overview": {
+    "description": "Nucor continues to electrify the steel industry...",
+    "mission": "Our challenge is to become the world's safest steel company..."
+  },
+  "ceo": { "id": 942368, "name": "Leon Topalian", "title": "CEO" },
+  "ratings": {
+    "overallRating": 4,
+    "ceoRating": 0.91,
+    "ceoRatingsCount": 275,
+    "recommendToFriendRating": 0.8,
+    "businessOutlookRating": 0.77,
+    "cultureAndValuesRating": 3.9,
+    "careerOpportunitiesRating": 3.8,
+    "workLifeBalanceRating": 3.2,
+    "seniorManagementRating": 3.6,
+    "compensationAndBenefitsRating": 4,
+    "diversityAndInclusionRating": 3.7,
+    "ratedCeo": { "id": 942368, "name": "Leon Topalian", "title": "CEO" }
+  },
+  "ratingCountDistribution": {
+    "overall": { "1": 48, "2": 59, "3": 128, "4": 218, "5": 397 },
+    "cultureAndValues": { "1": 52, "2": 49, "3": 79, "4": 137, "5": 358 },
+    "recommendToFriend": { "RECOMMEND": 494, "WONT_RECOMMEND": 133 }
+  },
+  "demographicRatings": [
+    {
+      "category": "gender",
+      "categoryRatings": [
+        { "categoryValue": "man", "ratings": { "overallRating": 3.9, "reviewCount": 141 } },
+        { "categoryValue": "woman", "ratings": { "overallRating": 3.9, "reviewCount": 34 } }
+      ]
+    }
+  ],
+  "reviewLocations": [
+    { "id": 93, "name": "Birmingham", "type": "METRO", "state": "Alabama", "country": "United States" }
+  ],
+  "officeLocations": [
+    {
+      "id": 1088,
+      "addressLine1": "701 Bank St Ne",
+      "cityName": "Decatur",
+      "administrativeAreaName1": "AL",
+      "countryName": "US",
+      "postalCode": "35601-1609",
+      "employerReviews": { "ratings": { "overallRating": 4.3 } }
+    }
+  ],
+  "benefitsOverallRating": 4.2,
+  "benefitsTotalReviews": 166,
+  "benefits": [
+    { "category": "Insurance, Health & Wellness", "name": "Health Insurance", "rating": 3.6, "reviewCount": 33, "verified": true }
+  ],
+  "benefitCountries": [
+    { "id": 1, "name": "United States" }
+  ],
+  "subsidiaries": [
+    { "employer": { "id": 449662, "name": "Harris Rebar", "ratings": { "overallRating": 3.6 } } }
+  ],
+  "photos": [
+    { "caption": "At work", "photoUrl2x": "https://media.glassdoor.com/..." }
+  ],
+  "counts": { "reviewCount": 850, "salaryCount": 1335, "interviewCount": 199 },
+  "scrapedAt": "2026-03-30T13:26:34.106Z"
+}
+```
+
+*Fields truncated for readability. Actual output includes all sub-ratings in demographic breakdowns, all office locations, all benefits, etc.*
+
+## Performance
+
+- **~10,000 reviews per minute**
+- **1 GB default memory** — keeps platform costs low
+- Handles pagination automatically — just set `maxReviews`
+- Gracefully handles rate limiting — returns whatever was collected
+- Company data adds ~2-3 seconds per employer (6 parallel queries)
+
+## Limitations
+
+- `maxReviews` is per company, not total across all URLs
+- Some fields may be null for older reviews
+- Reviews in all languages are collected; use the `translation.languageId` field to filter by language
+- Benefits data defaults to US; other countries available in `benefitCountries`
