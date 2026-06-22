@@ -1,260 +1,170 @@
-[Glassdoor Reviews Scraper](https://apify.com/kaix/glassdoor-reviews-scraper?fpr=data)
+[Glassdoor Reviews Scraper](https://apify.com/knotless_cadence/glassdoor-reviews-scraper?fpr=data)
 
-# Glassdoor Reviews Scraper
+# Glassdoor Reviews Scraper — Employee Reviews & Ratings in Clean JSON
 
-Scrape every review from any Glassdoor company page. ~10,000 reviews per minute. Structured JSON output with 10 rating categories, employment details, translations, and employer responses. Collects reviews in all languages.
+**Get employee review text and overall ratings from any Glassdoor company page — without an account, with three CSS/HTML fallback parsers so the actor keeps working when Glassdoor re-skins.**
 
-Optionally fetches comprehensive company data: profile, aggregate ratings, demographic breakdowns, office locations, benefits, photos, and more.
+This actor turns a Glassdoor company URL (or a search keyword) into a structured dataset of reviews — title, rating, pros, cons, author, and date — pulled from public Glassdoor company pages. Pagination handled automatically.
 
-Just paste a Glassdoor company reviews URL and hit Run.
+## Who uses this
 
-## What you get
+- **Talent-acquisition teams** benchmarking their employer brand against direct competitors before a recruiting push.
+- **HR consultants** building workforce-sentiment reports for clients in a specific industry.
+- **Market researchers** analyzing how companies in a sector are perceived internally.
+- **Job seekers with tooling** who want to compare 20 companies side-by-side instead of clicking through each page.
+- **Investment analysts** using employee sentiment as a leading indicator for operational health.
 
-### Reviews
+## What you get per review
 
-Every review includes:
+Real fields actually pushed by the actor (verified against `src/main.js`):
 
-- **Review text**: summary, pros, cons, advice to management
-- **10 ratings**: overall, work-life balance, culture, leadership, compensation, career opportunities, diversity, CEO approval, business outlook, recommend to friend
-- **Employment**: current/former, job title, tenure, employment status
-- **Location**: city and region
-- **Engagement**: helpful votes, featured status
-- **Translations**: original text for non-English reviews
-- **Employer responses**: company replies with job title and timestamps
-- **Meta**: review detail URL, division info, language mismatch flag
+| Field | Type | Example |
+| --- | --- | --- |
+| `companyName` | string | `"Stripe"` |
+| `title` | string | `"Great place for strong engineers"` |
+| `rating` | number / null | `4.5` |
+| `pros` | text | `"Clear growth paths, thoughtful peers..."` |
+| `cons` | text | `"Comp lag for senior ICs since 2024 freeze..."` |
+| `text` | text | concatenated `pros + cons` |
+| `author` | string | `"Senior Software Engineer"` (when surfaced by Glassdoor) |
+| `datePublished` | string | `"2026-03-11"` |
+| `scrapedAt` | string (ISO 8601) | `"2026-04-29T05:55:00.000Z"` |
 
-### Company data
+**Up to 9 fields per review (Methods 1 & 2)**, **6 fields if Method 3 fires** (no `rating`, no `author`, no `datePublished` — embedded-JSON regex doesn't extract them). For JSON-LD path (Method 1), `pros` and `cons` are emitted as empty strings — Glassdoor's JSON-LD `Review` schema collapses pros/cons into a single `reviewBody` which lands in the `text` field instead.
 
-One consolidated object per employer with:
-
-- **Profile**: name, headquarters, revenue, size, website, type, year founded, industry/sector, logos, CEO
-- **Aggregate ratings**: overall + 11 sub-ratings with CEO approval and recommend-to-friend ratios
-- **Rating distributions**: star breakdown (1-5) for 7 categories + recommend distribution
-- **Demographic ratings**: ratings broken down by gender, race/ethnicity, sexual orientation, disability, parent/caregiver, veteran status
-- **Review locations**: flat list of all cities/metros where reviews were submitted, with state and country
-- **Office locations**: full addresses with postal codes, country/continent, and per-office overall rating
-- **Benefits**: 50+ individual benefits with category, rating, review count, and verified status
-- **Photos**: company photos with captions
-- **Related companies**: parent, subsidiaries, siblings with ratings and counts
-- **Awards**: best places to work, best-led companies
-
-## Quick start
-
-Paste a Glassdoor company reviews URL:
-
-```
-{
-  "urls": ["https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm"]
-}
-```
-
-That's it. Default: 20 most recent reviews + full company data.
-
-### More examples
-
-**Multiple companies (200 reviews each):**
-
-```
-{
-  "urls": [
-    "https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm",
-    "https://www.glassdoor.com/Reviews/Meta-Reviews-E40772.htm"
-  ],
-  "maxReviews": 200
-}
-```
-
-**Reviews only (skip company data):**
-
-```
-{
-  "urls": ["https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm"],
-  "includeCompanyData": false
-}
-```
-
-**All reviews for a company:**
-
-```
-{
-  "urls": ["https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm"],
-  "maxReviews": 0
-}
-```
+No salary data, no interview data, no ratings breakdown by category — those are separate Glassdoor surfaces with their own anti-bot patterns; not in scope for this actor. If you need those, email and we can build a dedicated pipeline (see Custom scraping below).
 
 ## Input
 
-| Parameter | Type | Default | Description |
-| --- | --- | --- | --- |
-| **urls** | string[] | required | Glassdoor company reviews URLs (e.g. `glassdoor.com/Reviews/Google-Reviews-E9079.htm`) |
-| **maxReviews** | number | 20 | Max reviews per company. Set to 0 for no limit (all reviews). |
-| **sort** | select | DATE | `DATE` (newest first) or `RATING` (highest rated first) |
-| **includeCompanyData** | boolean | true | Fetch company profile, ratings, demographics, locations, benefits, photos |
-
-## Output
-
-### Reviews dataset (default)
-
-Each review is a single JSON object:
-
 ```
 {
-  "reviewId": 103260164,
-  "url": "https://www.glassdoor.com/Reviews/Employee-Review-Nucor-RVW103260164.htm",
-  "reviewDateTime": "2026-03-21T23:47:58.430",
-  "summary": "Not a good company",
-  "pros": "Good benefits and pay",
-  "cons": "Long hours, limited growth",
-  "advice": "Improve work-life balance",
-  "ratings": {
-    "overall": 4,
-    "workLifeBalance": 3,
-    "cultureAndValues": 4,
-    "seniorLeadership": 3,
-    "compensationAndBenefits": 5,
-    "careerOpportunities": 4,
-    "diversityAndInclusion": 4,
-    "ceo": "APPROVE",
-    "businessOutlook": "POSITIVE",
-    "recommendToFriend": "POSITIVE"
-  },
-  "employment": {
-    "isCurrentJob": true,
-    "status": "REGULAR",
-    "lengthOfEmployment": 36,
-    "jobEndingYear": null,
-    "jobTitle": { "id": 61331, "text": "Software Engineer" }
-  },
-  "location": { "id": 1127429, "name": "Birmingham, AL", "type": "CITY" },
-  "engagement": { "countHelpful": 10, "countNotHelpful": 2, "featured": false },
-  "translation": {
-    "languageId": "eng",
-    "originalLanguageId": null,
-    "summaryOriginal": null,
-    "prosOriginal": null,
-    "consOriginal": null,
-    "adviceOriginal": null
-  },
-  "hasEmployerResponse": false,
-  "employer": { "id": 489, "shortName": "Nucor", "name": "Nucor Corporation" },
-  "employerResponses": [],
-  "meta": {
-    "isLegal": true,
-    "isCovid19": false,
-    "translationMethod": null,
-    "flaggingDisabled": null,
-    "relatedStructures": [],
-    "isLanguageMismatch": false,
-    "reviewDetailUrl": "/Reviews/Employee-Review--RVW103260164.htm",
-    "divisionName": null,
-    "divisionLink": null,
-    "topLevelDomainId": 1,
-    "scrapedAt": "2026-03-30T10:00:00.000Z"
-  }
+  "companyUrls": [
+    "https://www.glassdoor.com/Overview/Working-at-Stripe-EI_IE671932.htm",
+    "https://www.glassdoor.com/Overview/Working-at-Notion-EI_IE3641702.htm"
+  ],
+  "searchQueries": ["fintech startups"],
+  "maxReviewsPerCompany": 100
 }
 ```
 
-### Company dataset (COMPANY)
+- `companyUrls` — list of Glassdoor company URLs (Overview or Reviews pages). The actor auto-converts Overview → Reviews and walks pagination.
+- `searchQueries` — list of keyword searches. The actor parses the search results page, picks up to 10 distinct employer links per query, then collects reviews for each.
+- `maxReviewsPerCompany` — per-company cap. **Default `30`.** Sensible upper bound around 200-500; the underlying `maxRequestsPerCrawl` is 500, so very large totals across many companies can hit that ceiling.
 
-One object per employer. Available via the named dataset `COMPANY` in Apify console or API.
+**Honest disclosure on parameters:**
+
+- `sortBy` IS in `input_schema.json` (accepts `date` / `relevance`) and IS read by the actor — but the value is **NOT applied to any URL parameter** in the current implementation. Effectively it is dead at runtime; reviews come back in whatever order Glassdoor's default review page serves. We will wire this up in a future version, or in a custom build if you need it now.
+- There is no `country` or `sortReviews` filter. If you want a specific country marketplace, pass that country's Glassdoor URL directly (`www.glassdoor.co.uk/...`, `www.glassdoor.de/...`, etc.).
+- Apify proxy is requested via `Actor.createProxyConfiguration()`. On free Apify plans (where proxy isn't included) this resolves to `undefined` and the crawler falls back to **direct fetch** — Glassdoor anti-bot is more likely to fire in that mode. For reliable runs at scale, use a paid Apify plan with proxy enabled, or commission a custom build with residential-proxy routing.
+- The actor does NOT proactively detect anti-bot challenges (CAPTCHA, "verify you are human", session-block). If all 3 extraction methods return 0 reviews for a URL, that is the silent indicator — re-run after 30-60 minutes from a fresh IP.
+
+## Python usage example
 
 ```
-{
-  "id": 489,
-  "name": "Nucor Corporation",
-  "shortName": "Nucor",
-  "headquarters": "Charlotte, NC",
-  "revenue": "$10+ billion (USD)",
-  "size": "10000+ Employees",
-  "sizeCategory": "GIANT",
-  "website": "www.nucor.com",
-  "type": "Company - Public",
-  "yearFounded": 1971,
-  "primaryIndustry": {
-    "industryId": 200074,
-    "industryName": "Metal & Mineral Manufacturing",
-    "sectorId": 10015,
-    "sectorName": "Manufacturing"
-  },
-  "overview": {
-    "description": "Nucor continues to electrify the steel industry...",
-    "mission": "Our challenge is to become the world's safest steel company..."
-  },
-  "ceo": { "id": 942368, "name": "Leon Topalian", "title": "CEO" },
-  "ratings": {
-    "overallRating": 4,
-    "ceoRating": 0.91,
-    "ceoRatingsCount": 275,
-    "recommendToFriendRating": 0.8,
-    "businessOutlookRating": 0.77,
-    "cultureAndValuesRating": 3.9,
-    "careerOpportunitiesRating": 3.8,
-    "workLifeBalanceRating": 3.2,
-    "seniorManagementRating": 3.6,
-    "compensationAndBenefitsRating": 4,
-    "diversityAndInclusionRating": 3.7,
-    "ratedCeo": { "id": 942368, "name": "Leon Topalian", "title": "CEO" }
-  },
-  "ratingCountDistribution": {
-    "overall": { "1": 48, "2": 59, "3": 128, "4": 218, "5": 397 },
-    "cultureAndValues": { "1": 52, "2": 49, "3": 79, "4": 137, "5": 358 },
-    "recommendToFriend": { "RECOMMEND": 494, "WONT_RECOMMEND": 133 }
-  },
-  "demographicRatings": [
-    {
-      "category": "gender",
-      "categoryRatings": [
-        { "categoryValue": "man", "ratings": { "overallRating": 3.9, "reviewCount": 141 } },
-        { "categoryValue": "woman", "ratings": { "overallRating": 3.9, "reviewCount": 34 } }
-      ]
-    }
-  ],
-  "reviewLocations": [
-    { "id": 93, "name": "Birmingham", "type": "METRO", "state": "Alabama", "country": "United States" }
-  ],
-  "officeLocations": [
-    {
-      "id": 1088,
-      "addressLine1": "701 Bank St Ne",
-      "cityName": "Decatur",
-      "administrativeAreaName1": "AL",
-      "countryName": "US",
-      "postalCode": "35601-1609",
-      "employerReviews": { "ratings": { "overallRating": 4.3 } }
-    }
-  ],
-  "benefitsOverallRating": 4.2,
-  "benefitsTotalReviews": 166,
-  "benefits": [
-    { "category": "Insurance, Health & Wellness", "name": "Health Insurance", "rating": 3.6, "reviewCount": 33, "verified": true }
-  ],
-  "benefitCountries": [
-    { "id": 1, "name": "United States" }
-  ],
-  "subsidiaries": [
-    { "employer": { "id": 449662, "name": "Harris Rebar", "ratings": { "overallRating": 3.6 } } }
-  ],
-  "photos": [
-    { "caption": "At work", "photoUrl2x": "https://media.glassdoor.com/..." }
-  ],
-  "counts": { "reviewCount": 850, "salaryCount": 1335, "interviewCount": 199 },
-  "scrapedAt": "2026-03-30T13:26:34.106Z"
+from apify_client import ApifyClient
+import statistics
+
+client = ApifyClient("YOUR_APIFY_TOKEN")
+
+run_input = {
+    "companyUrls": [
+        "https://www.glassdoor.com/Overview/Working-at-Stripe-EI_IE671932.htm",
+    ],
+    "maxReviewsPerCompany": 100,
 }
+
+run = client.actor("knotless_cadence/glassdoor-reviews-scraper").call(run_input=run_input)
+reviews = list(client.dataset(run["defaultDatasetId"]).iterate_items())
+
+# Average rating + spread
+ratings = [r["rating"] for r in reviews if r.get("rating") is not None]
+if ratings:
+    print(f"Avg rating: {statistics.mean(ratings):.2f} ({len(ratings)} reviews)")
+    if len(ratings) > 1:
+        print(f"Median: {statistics.median(ratings):.2f}, stdev: {statistics.stdev(ratings):.2f}")
+
+# Quick keyword scan in pros/cons
+for kw in ("layoff", "comp", "burnout", "growth"):
+    hits = [r for r in reviews if kw.lower() in (r.get("text") or "").lower()]
+    print(f"{kw:>8}: {len(hits)} reviews mention it")
 ```
 
-*Fields truncated for readability. Actual output includes all sub-ratings in demographic breakdowns, all office locations, all benefits, etc.*
+## How it works (3 extraction methods)
 
-## Performance
+Glassdoor renders reviews three ways depending on session, country, and anti-bot state. The actor tries all three in order:
 
-- **~10,000 reviews per minute**
-- **1 GB default memory** — keeps platform costs low
-- Handles pagination automatically — just set `maxReviews`
-- Gracefully handles rate limiting — returns whatever was collected
-- Company data adds ~2-3 seconds per employer (6 parallel queries)
+1. **JSON-LD `Review`/`EmployerReview` blocks** — fastest path, used when Glassdoor inlines structured data.
+2. **HTML review cards** — `[data-test="review-card"]`, `.gdReview`, `.empReview` selectors with `pros`/`cons`/`rating` parsers.
+3. **Embedded JSON in `<script>` tags** — regex match on `reviewTitle` + `pros` + `cons` patterns inside Apollo state / `__NEXT_DATA__`.
 
-## Limitations
+Method 1 fails → fall through to 2 → fall through to 3. If all three return empty, the page likely served an anti-bot challenge — re-run after 30-60 minutes.
 
-- `maxReviews` is per company, not total across all URLs
-- Some fields may be null for older reviews
-- Reviews in all languages are collected; use the `translation.languageId` field to filter by language
-- Benefits data defaults to US; other countries available in `benefitCountries`
+Apify proxy is used when available (`Actor.createProxyConfiguration()`); falls back to direct fetch if the proxy SDK isn't configured. `maxConcurrency=2`, `requestHandlerTimeoutSecs=30`, `maxRequestRetries=3`.
+
+## Common questions
+
+**Q: Do I need a Glassdoor account?**
+No. The actor reads publicly visible review pages.
+
+**Q: Does it pull salary or interview data?**
+Not in this actor. Salary and interview surfaces have separate anti-bot patterns and a different schema. Available as a custom build — see Custom scraping below.
+
+**Q: How often do reviews refresh?**
+Live at run time. Running daily gives you reliable new-review deltas.
+
+**Q: How do I turn raw reviews into actionable insight?**
+Common patterns: (1) keyword scan on pros/cons to find recurring themes, (2) rating trend by month to detect culture shifts, (3) date-cohort analysis (e.g. reviews from the 90 days after a re-org), (4) cross-company comparison within a sector.
+
+**Q: Is it compliant with Glassdoor's terms?**
+This actor accesses publicly visible pages only, at rate-limited pace (`maxConcurrency=2`). For commercial redistribution of reviews, check Glassdoor's data-use terms with legal counsel. For internal market-research use, public-data precedent (hiQ v. LinkedIn, 9th Circuit 2022) generally applies.
+
+**Q: Why might a run return fewer reviews than expected?**
+(a) Glassdoor served an anti-bot challenge — all three extraction methods return empty; re-run after 30-60 min. (b) Page count exceeded `maxRequestsPerCrawl=500`; lower the per-company cap or split the run. (c) Review cards changed CSS class names again — the JSON-LD and embedded-JSON fallbacks usually catch this, but report a broken URL via email and we'll patch the selectors.
+
+## Export integrations
+
+- CSV / JSON / Excel / HTML (native Apify dataset download)
+- Google Sheets (via Apify integration)
+- Webhooks (fire on each review batch)
+- S3 / GCS direct sync
+- Zapier / Make.com
+
+## Related scrapers
+
+| Source | Actor | Data |
+| --- | --- | --- |
+| Glassdoor (this) | Reviews | Workforce sentiment |
+| [Trustpilot](https://apify.com/knotless_cadence/trustpilot-review-scraper) | Customer reviews | External brand sentiment |
+| [Reddit Discussion](https://apify.com/knotless_cadence/reddit-discussion-scraper) | Discussion threads | Unfiltered opinion |
+| [Google News](https://apify.com/knotless_cadence/google-news-scraper) | News articles | Layoff / re-org / leadership signals |
+| [MCP Company Researcher](https://apify.com/knotless_cadence/mcp-company-researcher) | Company facts | Headcount, funding, profile |
+
+All 31 published actors free to inspect on [Apify Store](https://apify.com/store?search=knotless_cadence).
+
+---
+
+**Proof of delivery**: This Glassdoor reviews scraper has **39 lifetime production runs** as of May 2026. Author maintains 31 published actors (78 total) and shipped a paid 3-article series in March 2026 ($150, proxy industry). Pilot pricing locked through **May 2026**.
+
+**Sample request?** Reply `sample` to [spinov001@gmail.com](mailto:spinov001@gmail.com) and we'll send 2 published case-study articles within 24 hours.
+
+## Custom scraping — pilot tiers
+
+Need data, not infrastructure. We build, you query. Three tiers:
+
+- **Pilot — $97** · 1 actor, basic config, 7-day support. Good entry point — useful for a single Glassdoor competitor benchmark or a one-off salary surface.
+- **Standard — $297** · custom actor + Slack/email alerts on results, 30-day support. Most workforce-analytics projects fit here.
+- **Premium — $797** · custom actor + dashboard + 90-day support + 1 modification round. For ongoing pipelines (monthly competitor sentiment, multi-source enrichment with LinkedIn + Blind + Reddit).
+
+**Email:** [spinov001@gmail.com](mailto:spinov001@gmail.com) — drop specs, schema, or target URLs and get a quote within 48h.
+
+**Proof of work:** [31 published Apify scrapers](https://apify.com/knotless_cadence) (78 total in portfolio) — Trustpilot 951 runs, Reddit 82, Google News 45, Glassdoor 39, Email Extractor 107. Recently delivered a paid 3-article series for a client in the proxy industry ($150).
+
+**More tips:** [t.me/scraping_ai](https://t.me/scraping_ai) · [blog.spinov.online](https://blog.spinov.online)
+
+---
+
+## Disclaimer
+
+Designed for market-research, HR-intelligence, and academic use. Respect Glassdoor's Terms of Service, applicable data-protection law (GDPR, CCPA), and scrape publicly visible content only. Not affiliated with Glassdoor, Inc.
+
+*Honest disclosure: this scraper covers public Glassdoor company-page reviews only — no login-walled content, no salary surface, no interview surface. No `country` filter; `sortBy` is in the schema but currently dead at runtime (see Honest disclosure above). Pass a country-localized URL if needed. For any of those, request a custom build.*
