@@ -1,288 +1,229 @@
-[Glassdoor Reviews Scraper](https://apify.com/sovereigntaylor/glassdoor-reviews-scraper?fpr=data)
+[Glassdoor Reviews Scraper](https://apify.com/scrapier/glassdoor-reviews-scraper?fpr=data)
 
-The most comprehensive Glassdoor scraper on Apify. Goes far beyond basic review extraction to deliver deep company intelligence including employee reviews with sentiment analysis, detailed rating breakdowns (culture, compensation, management, work-life balance, career opportunities, diversity & inclusion), salary ranges by role and location, interview experiences with questions, benefits data, and company culture metrics.
+The Glassdoor Reviews Scraper helps you collect real employee feedback, ratings, and workplace insights from Glassdoor company pages in a structured format 📊. It eliminates manual effort, making it easier to analyze trends, compare employers, and understand workplace sentiment using clean, reliable review data.
 
-## What This Scraper Extracts
+## 🔍 What does Glassdoor Reviews Scraper do?
 
-### Company Profiles
+A Glassdoor Reviews Scraper is a powerful data extraction tool designed to collect employee reviews, ratings, pros, cons, job titles, and company insights directly from Glassdoor company pages 📊. Instead of manually browsing hundreds of reviews, this tool automates the process and delivers structured data in minutes.
 
-- Company name, overall rating, total review count
-- Recommend-to-friend rate, CEO approval rating, CEO name
-- Industry, headquarters, company size, revenue, year founded
-- Website, company type, mission statement, description
-- **Rating breakdown**: Culture & Values, Diversity & Inclusion, Work-Life Balance, Senior Management, Compensation & Benefits, Career Opportunities
-- Rating trends over time
+Businesses, researchers, and analysts use a glassdoor reviews scraper to better understand workplace sentiment, employer branding, and market reputation. It’s especially useful when reviews are removed, hidden, or suspected to be fake, helping teams analyze trends objectively.
 
-### Employee Reviews (Deep)
+Whether you want to scrape Glassdoor reviews for research, reputation monitoring, or competitive analysis, this scraper saves time ⏱️ and ensures consistent, reliable datasets for informed decision-making.
 
-- Review title, full text, pros, cons, advice to management
-- Overall rating + **6-category rating breakdown** per review
-- Author name, job title, location, employment status
-- Current vs. former employee indicator
-- Length of employment, helpful count, featured flag
-- **Sentiment analysis** (positive / negative / mixed / neutral)
-- Review date, pagination across all pages
+---
 
-### Salary Data
+## 📂 What Glassdoor Reviews Scraper can I extract?
 
-- Job title, median salary, base pay, total pay, additional pay
-- Salary range (min-max), number of salary reports
-- Currency detection (USD, GBP, EUR, CAD, AUD, JPY, INR, CHF)
-- Pay period (yearly, monthly, hourly, weekly)
-- Location and years of experience
+The Glassdoor Reviews Scraper allows you to collect a wide range of structured review data for deeper insights 🧠. Below is a clear breakdown of extractable fields:
 
-### Interview Experiences
+| 📊 Data Type | 📝 Description |
+| --- | --- |
+| Company Name | Name of the employer listed on Glassdoor |
+| Review Title | Headline given by the reviewer |
+| Review Text | Full employee feedback content |
+| Overall Rating | Star rating (1–5 scale ⭐) |
+| Pros | Positive points mentioned |
+| Cons | Negative points mentioned |
+| Job Title | Role of the reviewer |
+| Employment Status | Current or former employee |
+| Review Date | When the review was posted |
+| Location | Reviewer’s work location |
+| CEO Approval | Approval or disapproval rating |
+| Recommendation | Whether the reviewer recommends the company |
 
-- Job title, difficulty rating, overall experience
-- Outcome (got offer / no offer / declined)
-- Application method, interview process description
-- Interview questions asked
-- Date, duration, location
+💡 This structured data is ideal for analyzing glassdoor reviews fake patterns, tracking sentiment over time, and understanding why Glassdoor removed my review scenarios occur.
 
-### Benefits Data
+---
 
-- Overall benefits rating
-- Category breakdown (health, retirement, perks, time off, etc.)
-- Top highlighted benefits
+### 🚀 Key Features of Glassdoor Reviews Scraper
 
-### Company Culture
+The glassdoor scraper is built for performance, accuracy, and scale. Here’s what makes it stand out 👇
 
-- Culture & values rating
-- Company values list
-- Diversity rating, work-life balance rating, management rating
+- ✅ Bulk Review Extraction – Scrape thousands of reviews across multiple companies effortlessly
+- ⚡ Fast & Reliable – Optimized for high-speed data collection
+- 🔄 Pagination Support – Collect old and new reviews without limits
+- 🧹 Clean Structured Output – Ready-to-use JSON or CSV formats
+- 🧠 Sentiment-Friendly Fields – Pros, cons, ratings, and recommendations clearly separated
+- 🔐 No Login Required – Public data extraction only
+- 🛠️ Developer-Friendly – Works seamlessly with scrape glassdoor reviews python workflows
+- 📈 Scalable – From a single company to enterprise-level analysis
 
-## How to Use
+Many developers also explore glassdoor review scraper GitHub projects, but a ready-to-use scraper saves setup time and ongoing maintenance.
 
-### Input Options
+---
 
-**Company URLs** — Provide direct Glassdoor URLs (overview, reviews, or salary pages):
+## 🛠️ How to use Glassdoor Reviews Scraper
 
-```
-{
-  "companyUrls": [
-    "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.htm",
-    "https://www.glassdoor.com/Reviews/Apple-Reviews-E1138.htm"
-  ]
-}
-```
+Using the Glassdoor Reviews Scraper is simple and beginner-friendly 😊. Follow this step-by-step guide:
 
-**Search Terms** — Search by company name (the actor finds the best match):
+1️⃣ Log in to Apify
 
-```
-{
-  "searchTerms": ["Google", "Microsoft", "Amazon"]
-}
-```
+Create a free account or sign in to your existing one.
 
-**Combined** — Use both for maximum coverage:
+2️⃣ Select the Actor
 
-```
-{
-  "companyUrls": ["https://www.glassdoor.com/Overview/Working-at-Tesla-EI_IE43129.htm"],
-  "searchTerms": ["Netflix", "Meta"],
-  "maxReviews": 500,
-  "includeSalaries": true
-}
-```
+Search for “Glassdoor Reviews Scraper” in the Apify Store.
 
-### Configuration
+3️⃣ Enter Input Data
 
-| Parameter | Type | Default | Description |
-| --- | --- | --- | --- |
-| `companyUrls` | array | `[]` | Direct Glassdoor company URLs |
-| `searchTerms` | array | `[]` | Company names to search for |
-| `maxReviews` | integer | `300` | Max reviews per company (0 = unlimited) |
-| `includeSalaries` | boolean | `true` | Also scrape salary data |
-| `proxy` | object | — | Proxy configuration (residential recommended) |
+Paste one or multiple Glassdoor company review URLs into the input field.
 
-## Output Format
+4️⃣ Choose Options
 
-### Company Overview Record
+Set limits like number of reviews, language, or sorting preferences.
 
-```
-{
-  "type": "company_overview",
-  "companyName": "Google",
-  "overallRating": 4.3,
-  "totalReviewCount": 32456,
-  "recommendRate": "85%",
-  "ceoApproval": "92%",
-  "ceoName": "Sundar Pichai",
-  "industry": "Internet & Web Services",
-  "headquarters": "Mountain View, CA",
-  "companySize": "10000+ Employees",
-  "revenue": "$10+ billion (USD)",
-  "founded": "1998",
-  "website": "https://www.google.com",
-  "ratingBreakdown": {
-    "culture": 4.2,
-    "diversityInclusion": 4.1,
-    "workLifeBalance": 4.0,
-    "seniorManagement": 3.8,
-    "compensationBenefits": 4.5,
-    "careerOpportunities": 4.1
-  }
-}
-```
+5️⃣ Run the Actor
 
-### Review Record
+Click Start and let the scraper extract reviews automatically ⚙️.
 
-```
-{
-  "type": "review",
-  "companyName": "Google",
-  "title": "Great company, high expectations",
-  "rating": 4,
-  "text": "Working at Google is a dream for many engineers...",
-  "pros": "Excellent benefits, smart colleagues, free food, cutting-edge projects",
-  "cons": "High pressure, work-life balance can suffer, bureaucracy in large teams",
-  "adviceToManagement": "Focus more on employee well-being and reduce meeting culture",
-  "author": "Software Engineer",
-  "jobTitle": "Senior Software Engineer",
-  "location": "Mountain View, CA",
-  "date": "2024-11-15",
-  "isCurrentEmployee": true,
-  "employmentStatus": "Current Employee",
-  "lengthOfEmployment": "More than 3 years",
-  "helpfulCount": 42,
-  "ratingBreakdown": {
-    "culture": 4,
-    "workLifeBalance": 3,
-    "seniorManagement": 4,
-    "compensationBenefits": 5,
-    "careerOpportunities": 4,
-    "diversityInclusion": 4
-  },
-  "sentiment": "positive"
-}
-```
+6️⃣ Download Results
 
-### Salary Record
+Export the data in JSON, CSV, or Excel format 📥.
+
+✨ No technical setup is required, even if you’ve never tried to scrape Glassdoor reviews before.
+
+---
+
+## 🎯 Use Cases
+
+The Glassdoor Reviews Scraper supports a wide range of real-world applications 🌍:
+
+- 🏢 Employer Branding Analysis – Understand employee sentiment at scale
+- 📣 Reputation Monitoring – Track sudden spikes in negative or positive reviews
+- 🔍 Fake Review Detection – Identify suspicious or repetitive review patterns
+- 📊 Market Research – Compare competitors using authentic employee feedback
+- 🤖 Data Science Projects – Feed structured review data into models
+- 🧑‍💼 HR & Talent Teams – Discover why employees stay or leave
+- 📝 Content & Reports – Support insights when Glassdoor reviews are removed or disputed
+
+Whether you’re investigating glassdoor reviews fake claims or analyzing workforce trends, this tool delivers actionable insights.
+
+---
+
+## ⭐ Why choose us?
+
+We focus on accuracy, scalability, and simplicity 💎. Here’s why users trust our glassdoor reviews scraper:
+
+- 🏆 Proven Reliability – Consistent results across thousands of runs
+- 🔍 Data Accuracy – Clean fields with minimal noise
+- 🚀 High Performance – Handles large volumes smoothly
+- 🤝 Trusted Platform – Built and hosted on Apify
+- 📞 Ongoing Support – Clear documentation and updates
+- 🧩 Flexible Integration – Works well with Python, dashboards, and analytics tools
+
+Unlike many glassdoor review scraper GitHub scripts, our solution is production-ready and maintained.
+
+---
+
+## 📈 How many results can you scrape with Glassdoor Reviews Scraper?
+
+The Glassdoor Reviews Scraper is designed for both small and large-scale data collection 🧮. You can scrape:
+
+- ✔️ Hundreds of reviews from a single company
+- ✔️ Thousands of reviews across multiple companies
+- ✔️ Historical reviews using pagination support
+
+There’s no hard cap on results—your limits depend on:
+
+- Number of company URLs
+- Review availability per company
+- Selected run configuration
+
+This scalability makes it perfect for enterprises, researchers, and analysts who need to scrape Glassdoor reviews continuously or in bulk.
+
+Whether you’re monitoring one employer or tracking an entire industry, the scraper adapts to your workload without sacrificing speed or data quality ⚡.
+
+---
+
+## ⚖️ Is it legal to scrape Glassdoor reviews?
+
+Scraping Glassdoor reviews requires responsible and ethical use ⚠️. Here’s what to keep in mind:
+
+- 📜 Only publicly available data should be collected
+- 🔐 Avoid private or restricted content
+- 🧑‍⚖️ Follow local data usage and compliance rules
+- 🤝 Respect platform terms and fair-use principles
+
+Many users scrape data for research, analysis, or internal insights, not redistribution. If you’re unsure, always consult legal guidance. Ethical scraping protects both your project and data integrity.
+
+---
+
+## 🔧 Input Parameters
+
+### 📥 Example Input JSON
 
 ```
 {
-  "type": "salary",
-  "companyName": "Google",
-  "jobTitle": "Software Engineer",
-  "salary": "$165,000/yr",
-  "medianPay": 165000,
-  "basePay": 165000,
-  "totalPay": 285000,
-  "additionalPay": 120000,
-  "range": "$130,000 - $220,000",
-  "rangeMin": 130000,
-  "rangeMax": 220000,
-  "count": 1845,
-  "currency": "USD",
-  "payPeriod": "yr",
-  "location": "Mountain View, CA"
-}
-```
-
-### Interview Record
-
-```
-{
-  "type": "interview",
-  "companyName": "Google",
-  "jobTitle": "Software Engineer",
-  "difficulty": "Hard",
-  "experience": "Positive",
-  "outcome": "Accepted Offer",
-  "applicationMethod": "Online Application",
-  "interviewProcess": "Phone screen followed by 5 on-site interviews...",
-  "questions": [
-    "Design a URL shortener service",
-    "Implement LRU cache",
-    "System design: build a notification system"
+  "startItems": [
+    "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
+    "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm"
   ],
-  "date": "2024-10-01"
+  "proxyConfiguration": {
+    "useApifyProxy": false
+  },
+  "maxResults": 50
 }
 ```
 
-## Scraping Strategy
+## 📤 Output Format
 
-This actor uses a multi-layered extraction approach for maximum reliability:
-
-1. ****NEXT_DATA** JSON** (primary) — Glassdoor is built on Next.js and embeds structured page data as JSON. This is the richest data source.
-2. **Apollo Cache** (secondary) — GraphQL cache stored in `window.__APOLLO_STATE__` contains review and salary entities.
-3. **JSON-LD** — Structured data for search engines, contains company and aggregate rating info.
-4. **DOM Parsing** (fallback) — Cheerio-based HTML parsing for when JSON sources are unavailable.
-
-### Anti-Detection Features
-
-- 10+ rotating browser user-agent strings
-- Random delays between requests (1.5-4 seconds)
-- Referer header spoofing
-- Session management and rotation
-- Proxy support (residential proxies strongly recommended)
-
-## Use Cases
-
-- **HR Analytics** — Benchmark employer brand, track review sentiment over time
-- **Competitive Intelligence** — Compare company ratings, culture, and compensation across competitors
-- **Salary Benchmarking** — Build compensation databases by role, location, and company
-- **Recruitment Research** — Understand interview processes and candidate experience
-- **Employer Branding** — Monitor and improve your Glassdoor presence
-- **Due Diligence** — Evaluate company culture before M&A or investment
-
-## Tips for Best Results
-
-1. **Use residential proxies** — Glassdoor blocks datacenter IPs aggressively. Residential proxies are strongly recommended.
-2. **Start small** — Test with `maxReviews: 50` first to verify your proxy setup works.
-3. **Rate limiting** — The actor has built-in delays. Do not run multiple instances simultaneously on the same proxy pool.
-4. **Large companies** — For companies with 10,000+ reviews, set a reasonable `maxReviews` limit to control costs.
-
-## Pricing
-
-This actor uses Pay-Per-Event pricing:
-
-- **$0.005 per review** scraped (company profiles, salaries, interviews, and benefits are included at no extra charge)
-
-## Export Formats
-
-Data can be exported from the Apify dataset in:
-
-- JSON
-- CSV
-- Excel (XLSX)
-- XML
-- RSS
-
-## Support
-
-Built by Sovereign AI. For issues or feature requests, contact: [ricardo.yudi@gmail.com](mailto:ricardo.yudi@gmail.com)
-
-## Legal Notice
-
-This actor is provided for research and analytics purposes. Users are responsible for ensuring their use complies with Glassdoor's Terms of Service and applicable laws. The actor respects robots.txt and implements rate limiting to minimize server impact.
-
-## Integration — Python
+### 📦 Example Output JSON
 
 ```
-from apify_client import ApifyClient
-
-client = ApifyClient("YOUR_API_TOKEN")
-run = client.actor("sovereigntaylor/glassdoor-reviews-scraper").call(run_input={
-    "searchTerm": "glassdoor reviews",
-    "maxResults": 50
-})
-
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
-    print(f"{item.get('title', item.get('name', 'N/A'))}")
+{
+  "company_id": 354,
+  "company_url": "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
+  "reviews_count": 120,
+  "review_id": 4852131,
+  "summary": "Advisory Engineer in STG, IBM",
+  "pros": "Great colleagues, flexible policies...",
+  "cons": "Rating system issues...",
+  "advice": "Management must keep in mind...",
+  "rating_overall": 4,
+  "rating_career_opportunities": 5.0,
+  "rating_compensation_and_benefits": 3.0,
+  "job_title": "Advisory Engineer",
+  "location": "Hopewell Junction, NY",
+  "review_date_time": "2014-08-26T09:02:30.030",
+  "is_current_job": true,
+  "length_of_employment": 9
+}
 ```
 
-## Integration — JavaScript
+## ❓ FAQ – Glassdoor Reviews Scraper
 
-```
-import { ApifyClient } from 'apify-client';
-const client = new ApifyClient({ token: 'YOUR_API_TOKEN' });
+### 1️⃣ Can I scrape Glassdoor reviews in bulk?
 
-const run = await client.actor('sovereigntaylor/glassdoor-reviews-scraper').call({
-    searchTerm: 'glassdoor reviews',
-    maxResults: 50
-});
+Yes, the scraper supports bulk extraction across multiple companies.
 
-const { items } = await client.dataset(run.defaultDatasetId).listItems();
-items.forEach(item => console.log(item.title || item.name || 'N/A'));
-```
+### 2️⃣ Does this help analyze fake reviews?
+
+Absolutely. Structured data makes it easier to spot unusual patterns.
+
+### 3️⃣ Can I use this with Python?
+
+Yes, it integrates smoothly with scrape glassdoor reviews python workflows.
+
+### 4️⃣ Why was my Glassdoor review removed?
+
+Reviews may be removed due to policy violations or moderation rules.
+
+### 5️⃣ Is this better than GitHub scrapers?
+
+Yes, it’s maintained, scalable, and requires no manual setup.
+
+### 6️⃣ What formats can I download?
+
+JSON, CSV, and Excel formats are supported.
+
+### 7️⃣ Do I need a Glassdoor account?
+
+No account or login is required for public review pages.
+
+---
+
+## ✅ Conclusion
+
+The Glassdoor Reviews Scraper is a reliable solution for gathering large volumes of employee reviews quickly and efficiently 🚀. Whether you’re analyzing company reputation, tracking review patterns, or conducting research, this tool delivers structured data that supports smarter decisions and deeper workplace insights.
+
+✨ Glassdoor Reviews Scraper gives you clarity, scale, and confidence when working with employee reviews. Ready to turn reviews into insights?
